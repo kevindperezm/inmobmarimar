@@ -1,0 +1,17 @@
+form .actions {
+  margin-top: 1em;
+  text-align: right;
+}
+
+form label {
+  margin-top: 0.3em;
+}
+
+.phone, .mail {
+  font-size: 3em;
+  margin-bottom: 0.2em;
+}
+
+.mail {
+  font-size: 2em;
+}

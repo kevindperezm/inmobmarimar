@@ -1,0 +1,10 @@
+Propiedades en venta/propiedades en renta
+1.-Casas por Precio
+2.-Casas por Área
+3.-Departamentos por Precio
+4.-Departamentos por Área
+
+Terrenos en venta/terrenos en renta
+1.-Terrenos por precio
+2.-Terrenos por ubicación
+

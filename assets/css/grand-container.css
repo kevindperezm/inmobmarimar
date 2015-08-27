@@ -1,0 +1,20 @@
+html, body {
+	height: 100%;
+}
+
+.grand-container {
+	min-height: 100%;
+	position: relative;
+}
+
+main {
+	overflow:auto;
+	padding-bottom: 14em;
+}
+
+footer {
+	position: absolute;
+	bottom: 0em;
+	clear:both;
+	padding-top: 0.3em;
+}
