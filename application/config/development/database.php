@@ -6,7 +6,7 @@ $active_record = TRUE;
 /* You must fill the next fields with your own info */
 $db['default']['hostname'] = 'localhost';
 $db['default']['username'] = 'root';
-$db['default']['password'] = 'root';
+$db['default']['password'] = '12345';
 $db['default']['database'] = 'inmobmarimar';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';

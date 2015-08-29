@@ -77,7 +77,6 @@
                         <li><a href="#">Terrenos por Área</a></li>
                       </ul>
                     </li>
-                    <li><a href="<?=site_url('fraccionamientos')?>"><button class="btn btn-success">Fraccionamientos Nuevos</button></a></li>
                 </ul>
               </div>
 
