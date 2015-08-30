@@ -14,16 +14,19 @@ class Properties extends ApplicationController {
   }
 
   public function index($kind, $sell_mode, $page = 1) {
-    $this->init_pagination($kind, $sell_mode);
-    $offset = self::PER_PAGE * ($page - 1);
     $criteria = array('kind'      => $this->kind_for($kind),
                       'sell_mode' => $this->sell_mode_for($sell_mode));
-    $properties = $this->properties_model
-                  ->find_all($criteria, self::PER_PAGE, $offset);
+
+    $this->init_pagination($criteria, "$kind/$sell_mode");
+    $offset = self::PER_PAGE * ($page - 1);
+
+    $properties = $this->properties_model->find_all($criteria, self::PER_PAGE, $offset);
+
     $data = array('title'      => ucfirst($kind).' en '.singular($sell_mode),
                   'properties' => $properties,
                   'kind'       => $kind,
                   'sell_mode'  => $sell_mode);
+
     $this->render('properties/index', $data);
   }
 
@@ -38,11 +41,28 @@ class Properties extends ApplicationController {
     }
   }
 
-  private function init_pagination($kind, $sell_mode) {
-    $criteria = array('kind'      => $this->kind_for($kind),
-                      'sell_mode' => $this->sell_mode_for($sell_mode));
+  /**
+   * Muestra una página listando las propiedades que se ubican en nuevos fraccionamientos.
+   */
+  public function new_suburbs($page = 1) {
+    $criteria = array('new_suburb' => true);
+
+    $this->init_pagination($criteria, 'propiedades/nuevos-fraccionamientos');
+    $offset = self::PER_PAGE * ($page - 1);
+
+    $properties = $this->properties_model->find_all($criteria, self::PER_PAGE, $offset);
+
+    $data = array('title'      => 'Propiedades en fraccionamientos nuevos',
+                  'properties' => $properties,
+                  'kind'       => 'propiedades',
+                  'sell_mode'  => 'venta o en renta');
+
+    $this->render('properties/index', $data);
+  }
+
+  private function init_pagination($criteria, $url) {
     $properties_count = $this->properties_model->count($criteria);
-    $config = array('base_url'         => site_url("$kind/$sell_mode/pagina"),
+    $config = array('base_url'         => site_url("$url/pagina"),
                     'total_rows'       => $properties_count,
                     'per_page'         => self::PER_PAGE,
                     'use_page_numbers' => true,

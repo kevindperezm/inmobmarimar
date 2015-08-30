@@ -1,7 +1,7 @@
 <?= doctype('html5') ?>
 <html>
 <head>
-  <title><?= isset($title) ? "$title - " : '' ?>Inmobiliaria Marimar</title>
+  <title><?= isset($title) ? "$title | " : '' ?>Inmobiliaria Marimar</title>
   <meta charset="utf-8">
   <?= link_tag(img_url().'favicon.jpg', 'shortcut icon') ?>
   <?= css('bootstrap.min.css') ?>
