@@ -77,6 +77,11 @@
                         <li><a href="#">Terrenos por Área</a></li>
                       </ul>
                     </li>
+                    <li class="a">
+                      <a href="<?= site_url('propiedades/nuevos-fraccionamientos') ?>">
+                        <button class="btn btn-success btn-sm">Fraccionamientos nuevos</button>
+                      </a>
+                    </li>
                 </ul>
               </div>
 
