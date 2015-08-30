@@ -10,6 +10,7 @@ $route["($property_kinds)/($sell_modes)/pagina/(:num)"] = 'properties/index/$1/$
 $route["($property_kinds)/($sell_modes)/pagina"]        = 'properties/index/$1/$2/1';
 $route["($property_kinds)/($sell_modes)"]               = 'properties/index/$1/$2';
 $route['propiedades/(:num)']                            = 'properties/show/$1';
+$route['propiedades/nuevos-fraccionamientos']           = 'properties/new_suburbs';
 
 $route['contacto']        = 'contact/show_form';
 $route['contacto/enviar'] = 'contact/send_mail';
