@@ -9,8 +9,7 @@ class ApplicationController extends CI_Controller {
 
   protected function kind_for($kind) {
     $matches = array('propiedades' => 'house',
-                     'terrenos'    => 'terrain',
-                     'fraccionamientos' => 'fractioning');
+                     'terrenos'    => 'terrain');
     return $matches[$kind];
   }
 
