@@ -36,53 +36,21 @@
                 </button>
                 <a class="navbar-brand">Inmobiliaria Marimar</a>
               </div>
-
               <div class="collapse navbar-collapse dropdown" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li><a href="<?=site_url()?>"><button class="btn btn-success">Inicio</button></a></li>
-                    <li><a href="<?=site_url('contacto')?>"><button class="btn btn-success">Contacto</button></a></li>
-                    <li class="a">
-                      <button class="btn btn-success dropdown-toggle" type="button" data-toggle="dropdown">Propiedades en Venta
-                      <span class="caret"></span></button>
-                      <ul class="dropdown-menu">
-                        <li><a href="<?=site_url('propiedades/ventas')?>">Por Precio</a></li>
-                        <li><a href="#">Por Área</a></li>
-                        <li><a href="#">Departamentos por Precio</a></li>
-                        <li><a href="#">Departamentos por Área</a></li>
-                      </ul>
-                    </li>
-                    <li class="a">
-                      <button class="btn btn-success dropdown-toggle" type="button" data-toggle="dropdown">Propiedades en Renta
-                      <span class="caret"></span></button>
-                      <ul class="dropdown-menu">
-                        <li><a href="<?=site_url('propiedades/rentas')?>">Por Precio</a></li>
-                        <li><a href="#">Por Área</a></li>
-                        <li><a href="#">Departamentos por Precio</a></li>
-                        <li><a href="#">Departamentos por Área</a></li>
-                      </ul>
-                    </li>
-                    <li class="a">
-                      <button class="btn btn-success dropdown-toggle" type="button" data-toggle="dropdown">Terrenos en Venta
-                      <span class="caret"></span></button>
-                      <ul class="dropdown-menu">
-                        <li><a href="<?=site_url('terrenos/ventas')?>">Terrenos por Precio</a></li>
-                        <li><a href="#">Terrenos por Área</a></li>
-                      </ul>
-                    </li>
-                    <li class="a">
-                      <button class="btn btn-success dropdown-toggle" type="button" data-toggle="dropdown">Terrenos en Renta
-                      <span class="caret"></span></button>
-                      <ul class="dropdown-menu">
-                        <li><a href="<?=site_url('terrenos/rentas')?>">Terrenos por Precio</a></li>
-                        <li><a href="#">Terrenos por Área</a></li>
-                      </ul>
-                    </li>
+                  <li><a href="<?=site_url()?>"><button class="btn btn-success">Inicio</button></a></li>
+                  <li><a href="<?=site_url('contacto')?>"><button class="btn btn-success">Contacto</button></a></li>
+                  <li><a href="<?=site_url('propiedades/ventas')?>"><button class="btn btn-success">Propiedades en Venta</button></a></li>
+                  <li><a href="<?=site_url('propiedades/rentas')?>"><button class="btn btn-success">Propiedades en Renta</button></a></li>
+                  <li><a href="<?=site_url('terrenos/ventas')?>"><button class="btn btn-success">Terrenos en venta</button></a></li>
+                  <li><a href="<?=site_url('terrenos/rentas')?>"><button class="btn btn-success">Terrenos en Renta</button></a></li>
                 </ul>
               </div>
-
+              
             </div>
           </nav>
         </div>
+      </div>
       </header>
 
       <main>
