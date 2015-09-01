@@ -3,6 +3,7 @@
 <head>
   <title><?= isset($title) ? "$title | " : '' ?>Inmobiliaria Marimar</title>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <?= link_tag(img_url().'favicon.jpg', 'shortcut icon') ?>
   <?= css('bootstrap.min.css') ?>
   <?= css('grand-container.css') ?>
