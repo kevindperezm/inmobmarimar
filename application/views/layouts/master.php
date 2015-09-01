@@ -40,10 +40,22 @@
                 <ul class="nav navbar-nav">
                   <li><a href="<?=site_url()?>"><button class="btn btn-success">Inicio</button></a></li>
                   <li><a href="<?=site_url('contacto')?>"><button class="btn btn-success">Contacto</button></a></li>
-                  <li><a href="<?=site_url('propiedades/ventas')?>"><button class="btn btn-success">Propiedades en Venta</button></a></li>
-                  <li><a href="<?=site_url('propiedades/rentas')?>"><button class="btn btn-success">Propiedades en Renta</button></a></li>
-                  <li><a href="<?=site_url('terrenos/ventas')?>"><button class="btn btn-success">Terrenos en venta</button></a></li>
-                  <li><a href="<?=site_url('terrenos/rentas')?>"><button class="btn btn-success">Terrenos en Renta</button></a></li>
+                  <li class="dropdown">
+                    <button class="btn btn-success dropdown-toggle" type="button" data-toggle="dropdown">Propiedades
+                      <span class="caret"></span></button>
+                      <ul class="dropdown-menu">
+                        <li><a href="<?=site_url('propiedades/ventas')?>">En venta</a></li>
+                        <li><a href="<?=site_url('propiedades/rentas')?>">En renta</a></li>
+                      </ul>
+                  </li>
+                  <li class="dropdown">
+                    <button class="btn btn-success dropdown-toggle" type="button" data-toggle="dropdown">Terrenos
+                      <span class="caret"></span></button>
+                      <ul class="dropdown-menu">
+                        <li><a href="<?=site_url('terrenos/ventas')?>">En venta</a></li>
+                        <li><a href="<?=site_url('terrenos/rentas')?>">En renta</a></li>
+                      </ul>
+                  </li>
                 </ul>
               </div>
               
