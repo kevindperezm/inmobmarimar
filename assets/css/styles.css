@@ -1,7 +1,7 @@
-body { 
+body {
 	font-family: Helvetica;
  	font-size: 12px;
-  	color: #63665F; 
+  	color: #63665F;
   	background-color: white;
 }
 
@@ -21,18 +21,6 @@ main {
 	background-color: #4CAF50;
 }
 
-.navbar-default{
-	background-color: #4CAF50;
-	color: white;
-}
-
-.navbar-default .navbar-brand {
-	color: #212121;
-}
-
-.navbar-nav>li>a{
-	padding: .5em;
-}
 /*------------------------------------------------------------*/
 
 
@@ -86,9 +74,9 @@ main {
 	padding: 0.5em;
 }
 
-#page { 
+#page {
 	width: 585px;
-	margin: 30px auto; 
+	margin: 30px auto;
 }
 
 .visor{
@@ -101,27 +89,27 @@ main {
  	overflow: hidden;
 }
 
-#thumbs img, #largeImage { padding: 4px; 
-	background-color: white; 
-	cursor: pointer; 
-	width: 550px; 
-	height: 330px; 
+#thumbs img, #largeImage { padding: 4px;
+	background-color: white;
+	cursor: pointer;
+	width: 550px;
+	height: 330px;
 }
 
-#thumbs img { float: left; 
-	margin-right: 6px; 
-	width: 150px; 
+#thumbs img { float: left;
+	margin-right: 6px;
+	width: 150px;
 	height: 110px;}
 
-#description { background: black; 
-	color: white; 
-	position: absolute; 
-	bottom: 0; padding: 10px 20px; 
-	width: auto; 
-	margin: 5px; 
+#description { background: black;
+	color: white;
+	position: absolute;
+	bottom: 0; padding: 10px 20px;
+	width: auto;
+	margin: 5px;
 }
 
-#panel { position: relative; 
+#panel { position: relative;
 	border: 1px solid black;
 }
 

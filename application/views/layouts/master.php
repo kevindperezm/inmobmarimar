@@ -3,9 +3,11 @@
 <head>
   <title><?= isset($title) ? "$title - " : '' ?>Inmobiliaria Marimar</title>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <?= link_tag(img_url().'favicon.jpg', 'shortcut icon') ?>
   <?= css('bootstrap.min.css') ?>
   <?= css('grand-container.css') ?>
+  <?= css('navbar.css') ?>
   <?= css('styles.css') ?>
   <?= js('jquery-1.11.1.min.js') ?>
   <?= js('bootstrap.min.js') ?>
@@ -38,27 +40,26 @@
               </div>
               <div class="collapse navbar-collapse dropdown" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                  <li><a href="<?=site_url()?>"><button class="btn btn-success">Inicio</button></a></li>
-                  <li><a href="<?=site_url('contacto')?>"><button class="btn btn-success">Contacto</button></a></li>
+                  <li><a href="<?=site_url()?>">Inicio</a></li>
+                  <li><a href="<?=site_url('contacto')?>">Contacto</a></li>
                   <li class="dropdown">
-                    <button class="btn btn-success dropdown-toggle" type="button" data-toggle="dropdown">Propiedades
-                      <span class="caret"></span></button>
-                      <ul class="dropdown-menu">
-                        <li><a href="<?=site_url('propiedades/ventas')?>">En venta</a></li>
-                        <li><a href="<?=site_url('propiedades/rentas')?>">En renta</a></li>
-                      </ul>
+                    <a href="#"class="dropdown-toggle" data-toggle="dropdown">Propiedades <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="<?=site_url('propiedades/ventas')?>">En venta</a></li>
+                      <li><a href="<?=site_url('propiedades/rentas')?>">En renta</a></li>
+                    </ul>
                   </li>
                   <li class="dropdown">
-                    <button class="btn btn-success dropdown-toggle" type="button" data-toggle="dropdown">Terrenos
-                      <span class="caret"></span></button>
-                      <ul class="dropdown-menu">
-                        <li><a href="<?=site_url('terrenos/ventas')?>">En venta</a></li>
-                        <li><a href="<?=site_url('terrenos/rentas')?>">En renta</a></li>
-                      </ul>
+                    <a href="#"class="dropdown-toggle" data-toggle="dropdown">Terrenos <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="<?=site_url('terrenos/ventas')?>">En venta</a></li>
+                      <li><a href="<?=site_url('terrenos/rentas')?>">En renta</a></li>
+                    </ul>
                   </li>
+                  <li><a href="<?=site_url('propiedades/nuevos-fraccionamientos')?>">Fraccionamientos nuevos</a></li>
                 </ul>
               </div>
-              
+
             </div>
           </nav>
         </div>
