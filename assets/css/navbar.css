@@ -77,6 +77,10 @@
     background-color: #FFFFFF;
 }
 @media (max-width: 767px) {
+    .navbar-default .navbar-nav > li {
+        background-color: #4CAF50;
+    }
+
     .navbar-default .navbar-nav .open .dropdown-menu > li > a {
         color: #FFFFFF;
     }
