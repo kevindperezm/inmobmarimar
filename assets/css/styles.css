@@ -21,16 +21,12 @@ main {
 	background-color: #4CAF50;
 }
 
-.form-control:hover{
-	background-color: #388E3C;
-}
-
-.form-control{
+.busqueda{
 	background-color: #388E3C;
 	border: 1px solid white;
 }
 
-.form-control:focus{
+.busqueda:focus{
 	background-color: white;
 }
 /*------------------------------------------------------------*/
