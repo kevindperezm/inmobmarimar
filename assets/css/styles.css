@@ -21,6 +21,18 @@ main {
 	background-color: #4CAF50;
 }
 
+.form-control:hover{
+	background-color: #388E3C;
+}
+
+.form-control{
+	background-color: #388E3C;
+	border: 1px solid white;
+}
+
+.form-control:focus{
+	background-color: white;
+}
 /*------------------------------------------------------------*/
 
 
@@ -118,7 +130,7 @@ main {
 footer {
 	width: 100%;
 	padding: 0.5em 0;
-	background-color: #8BC34A;
+	background-color: #388E3C;
 	color: black;
 }
 
