@@ -13,8 +13,12 @@ main {
 	margin-top: 2em;
 }
 
-.btn{
-	font-size: 1.5em;
+.buscar{
+	border-color: #ffffff;
+}
+
+.buscar:hover{
+	border-color: #ffffff;
 }
 
 .btn-success{
