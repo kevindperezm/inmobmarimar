@@ -57,6 +57,16 @@
                     </ul>
                   </li>
                   <li><a href="<?=site_url('propiedades/nuevos-fraccionamientos')?>">Fraccionamientos nuevos</a></li>
+                  <div class="col-sm-3 col-md-3">
+                    <form class="navbar-form" role="search">
+                      <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Buscar" name="">
+                        <div class="input-group-btn">
+                          <button class="btn btn-default" type="submit"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
                 </ul>
               </div>
 
