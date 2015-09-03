@@ -59,8 +59,15 @@
                 </ul>
                 <form class="navbar-form navbar-right" role="search">
                   <div class="input-group">
-                    <input type="text" class="form-control busqueda" placeholder="Buscar propiedades" name="search">
-                    <span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span>
+                    <input type="text"
+                           class="form-control busqueda"
+                           placeholder="Buscar propiedades"
+                           name="search">
+                    <span class="input-group-btn">
+                      <button class="btn btn-default" type="submit">
+                        <i class="glyphicon glyphicon-search"></i>
+                      </button>
+                    </span>
                   </div>
                 </form>
               </div>

@@ -89,3 +89,7 @@
         color: #FFFFFF;
     }
 }
+
+.navbar-form {
+    padding: 0;
+}

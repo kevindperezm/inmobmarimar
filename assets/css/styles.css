@@ -19,6 +19,7 @@ main {
 
 .busqueda {
 	background-color: white;
+	min-width: 17em !important;
 }
 
 .busqueda:focus {
