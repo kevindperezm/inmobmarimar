@@ -2,16 +2,9 @@
 
 <div class="container">
   <div class="row">
-    <div class="col-md-6 hidden-xs">
-      <div class="col-sm-12" style="padding-bottom: 30px; padding-top: 10px;">
-        <center>
-          <img src="<?=img_url().'playa4.jpg'?>" class="img-responsive imgindex" name="cube">
-        </center>
-      </div>
-    </div>
-    <div class="col-md-6">
+    <div class="col-md-12 col-xs-12">
       <p><h3>Bienvenido al sitio web de Inmobiliaria Marimar</h3></p>
-      <p>
+      <!--<p>
         En este sitio web podrá admirar fotografías y conocer detalles sobre
         las propiedades y terrenos que tenemos en venta y renta en Inmobiliaria
         Marimar.
@@ -27,7 +20,25 @@
         a nuestros <?=anchor(site_url('contacto'), 'teléfonos de oficina')?>.
         Atenderle será un placer. También puede usar los mismos medios
         para contactarnos en caso de cualquier duda o aclaración que necesite.
-      </p>
+      </p>-->
+    </div>
+    <br>
+    <br>
+    <hr>
+
+    <div class="col-md-6 hidden-xs">
+      <div class="col-sm-12" style="padding-bottom: 30px; padding-top: 10px;">
+        <center>
+          <a href="<?=site_url('propiedades/13')?>">
+            <img src="<?=img_url().'diamante.jpg'?>" class="img-responsive imgindex" name="cube">
+          </a>
+        </center>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <p><h2>Fraccionamiento Diamante</h2></p>
+      <p>Excelente ubicación a excelente precio a solo 300 mts de la avenida Elías Zamora Verduzco, 
+        terrenos planos de 8 X 17.5 mts, cerca de hospitales, colegios y centros comerciales.</p>
     </div>
   </div>
 

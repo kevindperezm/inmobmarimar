@@ -1,8 +1,11 @@
 // <![CDATA[
 var specifyimage=new Array() //Imágenes
-specifyimage[0]="assets/img/descarga.jpg"
-specifyimage[1]="assets/img/playa6.jpg"
-specifyimage[2]="assets/img/tv.jpg"
+specifyimage[0]="assets/img/diamante/diamante.jpg"
+specifyimage[1]="assets/img/diamante/diamante1.jpg"
+specifyimage[2]="assets/img/diamante/diamante5.jpg"
+specifyimage[3]="assets/img/diamante/diamante6.jpg"
+specifyimage[4]="assets/img/diamante/diamante7.jpg"
+specifyimage[5]="assets/img/diamante/diamantemap.jpg"
 var delay=5000 //En milisegundos,1000=1segundo
 var count =1;
 

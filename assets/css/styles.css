@@ -33,6 +33,10 @@ main {
 .busqueda:focus{
 	background-color: white;
 }
+
+ul>li>a{
+	font-size: 1.4em;
+}
 /*------------------------------------------------------------*/
 
 
