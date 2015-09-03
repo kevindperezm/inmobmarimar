@@ -36,7 +36,6 @@
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand">Inmobiliaria Marimar</a>
               </div>
               <div class="collapse navbar-collapse dropdown" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
@@ -58,12 +57,10 @@
                   </li>
                   <li><a href="<?=site_url('propiedades/nuevos-fraccionamientos')?>">Fraccionamientos nuevos</a></li>
                 </ul>
-                <form class="navbar-form navbar-left" role="search">
+                <form class="navbar-form navbar-right" role="search">
                   <div class="input-group">
-                    <input type="text" class="form-control busqueda" placeholder="Buscar" name="name">
-                    <span class="input-group-btn">
-                      <button class="btn btn-default buscar" type="submit"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
-                    </span>
+                    <input type="text" class="form-control busqueda" placeholder="Buscar propiedades" name="search">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span>
                   </div>
                 </form>
               </div>

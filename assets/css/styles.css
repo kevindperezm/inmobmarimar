@@ -1,8 +1,8 @@
 body {
 	font-family: Helvetica;
  	font-size: 12px;
-  	color: #63665F;
-  	background-color: white;
+	color: #63665F;
+	background-color: white;
 }
 
 header {
@@ -13,26 +13,18 @@ main {
 	margin-top: 2em;
 }
 
-.buscar{
-	border-color: #ffffff;
-}
-
-.buscar:hover{
-	border-color: #ffffff;
-}
-
-.btn-success{
+.btn-success {
 	background-color: #4CAF50;
 }
 
-.busqueda{
-	background-color: #388E3C;
-	border: 1px solid white;
-}
-
-.busqueda:focus{
+.busqueda {
 	background-color: white;
 }
+
+.busqueda:focus {
+	box-shadow: none;
+}
+
 /*------------------------------------------------------------*/
 
 
