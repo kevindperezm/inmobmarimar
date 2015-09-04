@@ -12,15 +12,45 @@ header {
 main {
 	margin-top: 2em;
 }
+/*clase para el boton de buscar*/
+.buscar{
+	border-color: #ffffff;
+}
 
-.btn{
-	font-size: 1.5em;
+.buscar:hover{
+	border-color: #ffffff;
+}
+/*-------busqueda con dropdown---------*/
+.buscar2{
+	border-color: #ffffff;
+	border-radius: 0px;
+}
+
+.buscar2:hover{
+	border-color: #ffffff;
 }
 
 .btn-success{
 	background-color: #4CAF50;
 }
 
+/*.input-group{
+	width: 350px !important;
+	padding-top: .5em;
+}*/
+/*clase para el input de busqueda*/
+.busqueda{
+	background-color: #388E3C;
+	border: 1px solid white;
+}
+
+.busqueda:focus{
+	background-color: white;
+}
+
+ul>li>a{
+	font-size: 1.4em;
+}
 /*------------------------------------------------------------*/
 
 
@@ -118,7 +148,7 @@ main {
 footer {
 	width: 100%;
 	padding: 0.5em 0;
-	background-color: #8BC34A;
+	background-color: #388E3C;
 	color: black;
 }
 
