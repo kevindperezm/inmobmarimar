@@ -7,7 +7,7 @@ $dotenv = new Dotenv\Dotenv(__DIR__);
 $dotenv->load();
 
 /* Just dropping some constants here */
-define('CONTACT_EMAIL_ADDRESS', 'marimarmzo02@gmail.com');
+define('CONTACT_EMAIL_ADDRESS', getenv('CONTACT_EMAIL_ADDRESS'));
 
 /*
  *---------------------------------------------------------------
