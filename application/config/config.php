@@ -14,7 +14,7 @@
 | path to your installation.
 |
 */
-$config['base_url']	= getenv('APP_BASE_URL');
+$config['base_url']  = '';
 
 /*
 |--------------------------------------------------------------------------
@@ -279,7 +279,7 @@ $config['cookie_secure']	= FALSE;
 | COOKIE data is encountered
 |
 */
-$config['global_xss_filtering'] = FALSE;
+$config['global_xss_filtering'] = TRUE;
 
 /*
 |--------------------------------------------------------------------------
