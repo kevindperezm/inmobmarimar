@@ -1,0 +1,16 @@
+{
+    "name": "mundovirtual/inmobmarimar",
+    "description": "Sitio web de Inmobiliaria Marimar",
+    "type": "project",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Kevin Perez",
+            "email": "kevindperezm@gmail.com"
+        }
+    ],
+    "require": {
+			"php": "5.3.*",
+        "vlucas/phpdotenv": "^2.0"
+		}
+}
