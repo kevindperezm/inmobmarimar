@@ -27,7 +27,7 @@ define('CONTACT_EMAIL_ADDRESS', 'marimarmzo02@gmail.com');
  * NOTE: If you change these, also change the error_reporting() code below
  *
  */
-	define('ENVIRONMENT', 'production');
+	define('ENVIRONMENT', getenv('APP_ENVIRONMENT'));
 /*
  *---------------------------------------------------------------
  * ERROR REPORTING
