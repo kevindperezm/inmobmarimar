@@ -2,6 +2,10 @@
 
 require 'vendor/autoload.php';
 
+/* Preparando entorno */
+$dotenv = new DotEnv\DotEnv(__DIR__);
+$dotenv->load();
+
 /* Just dropping some constants here */
 define('CONTACT_EMAIL_ADDRESS', 'marimarmzo02@gmail.com');
 
