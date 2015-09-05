@@ -57,19 +57,16 @@
                   </li>
                   <li><a href="<?=site_url('propiedades/nuevos-fraccionamientos')?>">Fraccionamientos nuevos</a></li>
                 </ul>
-                <form class="navbar-form navbar-right" role="search">
+                <?= form_open(site_url('propiedades/buscar'), 'class="navbar-form navbar-right"') ?>
                   <div class="input-group">
-                    <input type="text"
-                           class="form-control busqueda"
-                           placeholder="Buscar propiedades"
-                           name="search">
+                    <?= form_input('keywords', set_value('keywords', null), 'class="form-control" placeholder="Buscar propiedades"') ?>
                     <span class="input-group-btn">
                       <button class="btn btn-default" type="submit">
                         <i class="glyphicon glyphicon-search"></i>
                       </button>
                     </span>
                   </div>
-                </form>
+                <?= form_close() ?>
               </div>
 
             </div>
