@@ -14,7 +14,7 @@
 | path to your installation.
 |
 */
-$config['base_url']	= '';
+$config['base_url']	= getenv('APP_BASE_URL');
 
 /*
 |--------------------------------------------------------------------------
@@ -69,7 +69,7 @@ $config['url_suffix'] = '';
 | than english.
 |
 */
-$config['language']	= 'english';
+$config['language']	= getenv('APP_LANGUAGE');
 
 /*
 |--------------------------------------------------------------------------
@@ -180,7 +180,7 @@ $config['directory_trigger']	= 'd'; // experimental not currently in use
 | your log files will fill up very fast.
 |
 */
-$config['log_threshold'] = 0;
+$config['log_threshold'] = getenv('APP_LOG_THRESHOLD');
 
 /*
 |--------------------------------------------------------------------------
@@ -224,7 +224,7 @@ $config['cache_path'] = '';
 | MUST set an encryption key.  See the user guide for info.
 |
 */
-$config['encryption_key'] = getenv('ENCRYPTION_SECRET');
+$config['encryption_key'] = getenv('APP_ENCRYPTION_KEY');
 
 /*
 |--------------------------------------------------------------------------
