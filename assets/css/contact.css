@@ -15,3 +15,7 @@ form label {
 .mail {
   font-size: 2em;
 }
+
+#contacts .thumbnail img {
+  width: auto !important;
+}
