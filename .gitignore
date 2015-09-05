@@ -3,4 +3,5 @@
 /application/logs
 /application/cache
 /assets/img/properties
+/vendor/
 

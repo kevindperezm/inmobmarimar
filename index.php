@@ -1,5 +1,7 @@
 <?php
 
+require 'vendor/autoload.php';
+
 /* Just dropping some constants here */
 define('CONTACT_EMAIL_ADDRESS', 'marimarmzo02@gmail.com');
 
