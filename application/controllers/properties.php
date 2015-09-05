@@ -60,6 +60,27 @@ class Properties extends ApplicationController {
     $this->render('properties/index', $data);
   }
 
+  /**
+   * Muestra una página con los resultados de una búsqueda
+   *
+   * @param integer $page Página actual
+   */
+  public function search($page = 1) {
+    $keywords = $this->input->get_post('keywords');
+    $criteria = array('name'            => $keywords,
+                      'address_colony'  => $keywords,
+                      'address_city'    => $keywords,
+                      'address_country' => $keywords,
+                      'address_street'  => $keywords);
+    $properties = $this->properties_model->search($criteria,
+                                                  self::PER_PAGE,
+                                                  self::PER_PAGE * ($page - 1));
+    $data = array('keywords'   => $keywords,
+                  'properties' => $properties);
+
+    $this->render('properties/search', $data);
+  }
+
   private function init_pagination($criteria, $url) {
     $properties_count = $this->properties_model->count($criteria);
     $config = array('base_url'         => site_url("$url/pagina"),

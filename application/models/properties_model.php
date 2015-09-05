@@ -1,5 +1,8 @@
 <?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
+/**
+ * @property CI_DB_active_record $db
+ */
 class Properties_model extends CI_Model {
 
   const TABLE_NAME = 'properties';
@@ -47,6 +50,20 @@ class Properties_model extends CI_Model {
   public function find_all($criteria, $limit = 1, $offset = 0) {
     $qry = $this->db->get_where(self::TABLE_NAME, $criteria, $limit, $offset);
     return $qry->result();
+  }
+
+  public function search($criteria, $limit = 1, $offset = 0) {
+    $query = $this->db->from(self::TABLE_NAME)->limit($limit, $offset);
+
+    foreach ($criteria as $key => $item) {
+      if (is_string($item)) {
+        $query->or_like($key, $item);
+      } else {
+        $query->or_where($key, $item);
+      }
+    }
+
+    return $query->get()->result();
   }
 
 }
