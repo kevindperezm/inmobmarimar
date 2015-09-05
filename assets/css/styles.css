@@ -5,6 +5,10 @@ body {
 	background-color: white;
 }
 
+p {
+	text-align: justify;
+}
+
 header {
 	background: #388E3C;
 }
