@@ -6,6 +6,7 @@
       <h3>Háganos saber cómo podemos ayudarle</h3>
     </div>
   </div>
+
   <?php if ($mail_success): ?>
     <div class="row">
       <div class="col-sm-12">
@@ -29,10 +30,6 @@
     </div>
   <?php endif; ?>
 
-
-
-
-
   <div class="row">
     <div class="col-md-6">
       <p>
@@ -42,20 +39,20 @@
       </p>
       <br>
       <div class="col-sm-12 col-md-6">
-        <img src="<?=img_url().'fotop4.jpg'?>" style="width: 105px; height: 135px; border: 2px solid gray;">
+        <img src="<?=img_url().'contacts/fotop4.jpg'?>" style="width: 105px; height: 135px; border: 2px solid gray;">
         <p>Dina Armas</p>
         <p>ventasmzo02@gmail.com</p>
-      
-        <img src="<?=img_url().'fotop1.jpg'?>" style="width: 105px; height: 135px; border: 2px solid gray;">
+
+        <img src="<?=img_url().'contacts/fotop1.jpg'?>" style="width: 105px; height: 135px; border: 2px solid gray;">
         <p>Angela Rocha</p>
         <p>belenizhi19@gmail.com</p>
       </div>
       <div class="col-sm-12 col-md-6">
-        <!--<img src="<?=img_url().'fotop3.jpg'?>" style="width: 105px; height: 135px; border: 2px solid gray;">
+        <!--<img src="<?=img_url().'contacts/fotop3.jpg'?>" style="width: 105px; height: 135px; border: 2px solid gray;">
         <p>Rosa Maria Rincon</p>
         <p>rosyma58@hotmail.com</p>-->
-      
-        <img src="<?=img_url().'fotop2.jpg'?>" style="width: 105px; height: 135px; border: 2px solid gray;">
+
+        <img src="<?=img_url().'contacts/fotop2.jpg'?>" style="width: 105px; height: 135px; border: 2px solid gray;">
         <p>Jose Luis Aguilar</p>
         <p>joseluis57ventas@gmail.com</p>
       </div>
