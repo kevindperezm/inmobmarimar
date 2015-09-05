@@ -1,9 +1,9 @@
 <?php
 
-require 'vendor/autoload.php';
+require_once 'vendor/autoload.php';
 
 /* Preparando entorno */
-$dotenv = new DotEnv\DotEnv(__DIR__);
+$dotenv = new Dotenv\Dotenv(__DIR__);
 $dotenv->load();
 
 /* Just dropping some constants here */
