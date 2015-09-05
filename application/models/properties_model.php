@@ -57,9 +57,9 @@ class Properties_model extends CI_Model {
 
     foreach ($criteria as $key => $item) {
       if (is_string($item)) {
-        $query->like($key, $item);
+        $query->or_like($key, $item);
       } else {
-        $query->where($key, $item);
+        $query->or_where($key, $item);
       }
     }
 
