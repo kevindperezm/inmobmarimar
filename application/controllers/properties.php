@@ -4,8 +4,6 @@ require_once __DIR__.'/application.php';
 
 class Properties extends ApplicationController {
 
-  const PER_PAGE = 20;
-
   public function __construct() {
     parent::__construct();
     $this->load->library('Picture_repo');
@@ -58,51 +56,6 @@ class Properties extends ApplicationController {
                   'sell_mode'  => 'venta o en renta');
 
     $this->render('properties/index', $data);
-  }
-
-  /**
-   * Muestra una página con los resultados de una búsqueda
-   *
-   * @param integer $page Página actual
-   */
-  public function search($page = 1) {
-    $keywords = $this->input->get_post('keywords');
-    $criteria = array('name'            => $keywords,
-                      'address_colony'  => $keywords,
-                      'address_city'    => $keywords,
-                      'address_country' => $keywords,
-                      'address_street'  => $keywords);
-    $properties = $this->properties_model->search($criteria,
-                                                  self::PER_PAGE,
-                                                  self::PER_PAGE * ($page - 1));
-    $data = array('keywords'   => $keywords,
-                  'properties' => $properties);
-
-    $this->render('properties/search', $data);
-  }
-
-  private function init_pagination($criteria, $url) {
-    $properties_count = $this->properties_model->count($criteria);
-    $config = array('base_url'         => site_url("$url/pagina"),
-                    'total_rows'       => $properties_count,
-                    'per_page'         => self::PER_PAGE,
-                    'use_page_numbers' => true,
-                    'uri_segment'      => 4,
-                    'full_tag_open'    => '<div class="pagination">',
-                    'full_tag_close'   => '</div>',
-                    'first_tag_open'   => '<li>',
-                    'first_tag_close'  => '</li>',
-                    'prev_tag_open'    => '<li>',
-                    'prev_tag_close'   => '</li>',
-                    'num_tag_open'     => '<li>',
-                    'num_tag_close'    => '</li>',
-                    'next_tag_open'    => '<li>',
-                    'next_tag_close'   => '</li>',
-                    'last_tag_open'    => '<li>',
-                    'last_tag_close'   => '</li>',
-                    'cur_tag_open'     => '<li class="active"><a href="#">',
-                    'cur_tag_close'    => '</a></li>');
-    $this->pagination->initialize($config);
   }
 
 }
