@@ -4,15 +4,18 @@ require_once __DIR__.'/application.php';
 
 class Areas extends ApplicationController {
 
-  const PER_PAGE = 20;
-
   public function __construct() {
     parent::__construct();
-    $this->load->library('Picture_repo');
-    $this->load->helper('inflector');
+
     $this->load->library('pagination');
   }
- private function index(){
-     $this->load->view('areas');
+
+  public function index() {
+    $data = array(
+      'areas' => $this->db->from('areas')->order_by('nombre')->get()->result()
+    );
+
+    $this->render('areas/index', $data);
   }
+
 }
