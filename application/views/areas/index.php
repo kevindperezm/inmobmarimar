@@ -14,7 +14,7 @@
       <img src="assets/img/mapa-areas.jpg" usemap="#map" style="width: 820px; height: 455px;">
         <map name="map">
           <?php foreach ($areas as $area) : ?>
-            <area shape="circle" coords="<?= implode(',', [$area->position_1, $area->position_2, $area->position_3]) ?>" href="#" alt="<?= $area->nombre ?>">
+            <?= shape_for_area($area) ?>
           <?php endforeach ?>
         </map>
     </div>

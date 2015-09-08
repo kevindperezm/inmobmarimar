@@ -8,6 +8,7 @@ class Areas extends ApplicationController {
     parent::__construct();
 
     $this->load->library('pagination');
+    $this->load->helper('areas');
   }
 
   public function index() {
