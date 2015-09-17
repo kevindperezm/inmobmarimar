@@ -11,7 +11,7 @@
     </div>
 
     <div class="col-md-10">
-      <img src="assets/img/mapa-areas.jpg" usemap="#map" style="width: 820px; height: 455px;">
+      <img src="<?= img_url() . 'mapa-areas.jpg' ?>" usemap="#map" style="width: 820px; height: 455px;">
         <map name="map">
           <?php foreach ($areas as $area) : ?>
             <?= shape_for_area($area) ?>
