@@ -23,6 +23,7 @@ class Areas extends ApplicationController {
    */
   public function show($id, $pagina = 1) {
     $this->load->library('pagination');
+    $this->load->library('Picture_repo');
 
     $area = $this->db->from('areas')->where("id = $id")->limit(1)->get()->result()[0];
 

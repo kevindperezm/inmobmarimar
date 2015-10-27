@@ -92,6 +92,11 @@ main {
 	padding-bottom: 15px;
 }
 
+@media (min-width: 320px) and (max-width: 758px){
+	.mapa{
+		display: none;
+	}
+}
 /*----------------------------------------------------*/
 
 #thumbs { padding-top: 10px;
