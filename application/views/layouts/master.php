@@ -46,7 +46,7 @@
                     <ul class="dropdown-menu">
                       <li><a href="<?=site_url('propiedades/ventas')?>">En venta</a></li>
                       <li><a href="<?=site_url('propiedades/rentas')?>">En renta</a></li>
-                      <li><a href="<?=site_url('')?>">Por áreas</a></li>
+                      <li><a href="<?=site_url('areas')?>">Por áreas</a></li>
                     </ul>
                   </li>
                   <li class="dropdown">
@@ -54,7 +54,7 @@
                     <ul class="dropdown-menu">
                       <li><a href="<?=site_url('terrenos/ventas')?>">En venta</a></li>
                       <li><a href="<?=site_url('terrenos/rentas')?>">En renta</a></li>
-                      <li><a href="<?=site_url('')?>">Por áreas</a></li>
+                      <li><a href="<?=site_url('areas')?>">Por áreas</a></li>
                     </ul>
                   </li>
                   <li><a href="<?=site_url('propiedades/nuevos-fraccionamientos')?>">Fraccionamientos nuevos</a></li>
