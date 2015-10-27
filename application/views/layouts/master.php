@@ -16,7 +16,7 @@
 <body>
   <div class="grand-container">
     <header>
-      <div class="col-md-12 col-sm-12 col-xs-12 col-lg-12" style="padding-bottom: 10px; padding-top: 10px;">
+      <div class="col-md-12 col-sm-12 col-xs-12 col-lg-12 imglogo" style="padding-bottom: 10px; padding-top: 10px;">
         <center>
           <img class="img-responsive imglogo" src="<?=img_url().'marimar-logo.jpg'?>">
         </center>

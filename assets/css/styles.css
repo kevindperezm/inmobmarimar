@@ -96,7 +96,13 @@ main {
 	.mapa{
 		display: none;
 	}
+
+	.imglogo{
+		display: none;
+	}
 }
+
+
 /*----------------------------------------------------*/
 
 #thumbs { padding-top: 10px;
