@@ -18,7 +18,7 @@
           <?= $this->load->view('partials/property_box', array('property' => $property), true) ?>
         <?php endforeach; ?>
       <?php else: ?>
-        Desafortunadamente, no tenemos <?= strtolower($title) ?> que mostrarle
+        Desafortunadamente, no tenemos <?= lcfirst($title) ?> que mostrarle
         en esta página. Por favor, revise esta página más tarde o contáctenos
         para una atención más personalizada.
       <?php endif; ?>

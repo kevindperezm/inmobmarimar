@@ -1,8 +1,12 @@
 body {
 	font-family: Helvetica;
  	font-size: 12px;
-  	color: #63665F;
-  	background-color: white;
+	color: #63665F;
+	background-color: white;
+}
+
+p {
+	text-align: justify;
 }
 
 header {
@@ -12,45 +16,20 @@ header {
 main {
 	margin-top: 2em;
 }
-/*clase para el boton de buscar*/
-.buscar{
-	border-color: #ffffff;
-}
 
-.buscar:hover{
-	border-color: #ffffff;
-}
-/*-------busqueda con dropdown---------*/
-.buscar2{
-	border-color: #ffffff;
-	border-radius: 0px;
-}
-
-.buscar2:hover{
-	border-color: #ffffff;
-}
-
-.btn-success{
+.btn-success {
 	background-color: #4CAF50;
 }
 
-/*.input-group{
-	width: 350px !important;
-	padding-top: .5em;
-}*/
-/*clase para el input de busqueda*/
-.busqueda{
-	background-color: #388E3C;
-	border: 1px solid white;
-}
-
-.busqueda:focus{
+.busqueda {
 	background-color: white;
+	min-width: 17em !important;
 }
 
-ul>li>a{
-	font-size: 1.4em;
+.busqueda:focus {
+	box-shadow: none;
 }
+
 /*------------------------------------------------------------*/
 
 
@@ -113,6 +92,11 @@ ul>li>a{
 	padding-bottom: 15px;
 }
 
+@media (min-width: 320px) and (max-width: 758px){
+	.mapa{
+		display: none;
+	}
+}
 /*----------------------------------------------------*/
 
 #thumbs { padding-top: 10px;

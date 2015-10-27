@@ -1,7 +1,13 @@
 <?php
 
+require_once 'vendor/autoload.php';
+
+/* Preparando entorno */
+$dotenv = new Dotenv\Dotenv(__DIR__);
+$dotenv->load();
+
 /* Just dropping some constants here */
-define('CONTACT_EMAIL_ADDRESS', 'marimarmzo02@gmail.com');
+define('CONTACT_EMAIL_ADDRESS', getenv('CONTACT_EMAIL_ADDRESS'));
 
 /*
  *---------------------------------------------------------------
@@ -21,7 +27,7 @@ define('CONTACT_EMAIL_ADDRESS', 'marimarmzo02@gmail.com');
  * NOTE: If you change these, also change the error_reporting() code below
  *
  */
-	define('ENVIRONMENT', 'production');
+	define('ENVIRONMENT', getenv('APP_ENVIRONMENT'));
 /*
  *---------------------------------------------------------------
  * ERROR REPORTING

@@ -6,6 +6,7 @@
       <h3>Háganos saber cómo podemos ayudarle</h3>
     </div>
   </div>
+
   <?php if ($mail_success): ?>
     <div class="row">
       <div class="col-sm-12">
@@ -29,44 +30,50 @@
     </div>
   <?php endif; ?>
 
-
-
-
-
   <div class="row">
     <div class="col-md-6">
       <p>
         Si encontró en este sitio web alguna propiedad que llamó su interés y
         desea adquirirla, o si tiene alguna duda que desea resolver,
-        estamos a sus órdenes en los siguientes teléfonos:
+        contacte con alguno de nuestros vendedores o llámenos al teléfono que encontrará debajo.
       </p>
       <br>
-      <div class="col-sm-12 col-md-6">
-        <img src="<?=img_url().'fotop4.jpg'?>" style="width: 105px; height: 135px; border: 2px solid gray;">
-        <p>Dina Armas</p>
-        <p>ventasmzo02@gmail.com</p>
-      
-        <img src="<?=img_url().'fotop1.jpg'?>" style="width: 105px; height: 135px; border: 2px solid gray;">
-        <p>Angela Rocha</p>
-        <p>belenizhi19@gmail.com</p>
+      <div id="contacts" class="row">
+        <div class="col-xs-6">
+          <div class="thumbnail">
+            <img src="<?=img_url().'contacts/fotop4.jpg'?>">
+            <div class="caption">
+              <h6>Dina Armas</h6>
+              <a href="mailto:ventasmzo02@gmail.com">ventasmzo02@gmail.com</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-6">
+          <div class="thumbnail">
+            <img src="<?=img_url().'contacts/fotop1.jpg'?>">
+            <div class="caption">
+              <h6>Angela Rocha</h6>
+              <a href="mailto:belenizhi19@gmail.com">belenizhi19@gmail.com</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-6">
+          <div class="thumbnail">
+            <img src="<?=img_url().'contacts/fotop2.jpg'?>">
+            <div class="caption">
+              <h6>Jose Luis Aguilar</h6>
+              <a href="mailto:joseluis57ventas@gmail.com">joseluis57ventas@gmail.com</a>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="col-sm-12 col-md-6">
-        <!--<img src="<?=img_url().'fotop3.jpg'?>" style="width: 105px; height: 135px; border: 2px solid gray;">
-        <p>Rosa Maria Rincon</p>
-        <p>rosyma58@hotmail.com</p>-->
-      
-        <img src="<?=img_url().'fotop2.jpg'?>" style="width: 105px; height: 135px; border: 2px solid gray;">
-        <p>Jose Luis Aguilar</p>
-        <p>joseluis57ventas@gmail.com</p>
-      </div>
-      <br>
-      <div  class="col-sm-12 col-md-6">
+      <div class="col-sm-12" style="margin: 2em 0">
         <p style="font-size: 2em"><b>Telefono y horario de oficina</b></p>
           <div class="phone">
           <i class="glyphicon glyphicon-phone"></i>
             <span> 688-1194 </span>
           </div>
-           <p style="font-size: 1.5em">Horario de: 10:00 AM a 14:00 PM</p>
+           <p style="font-size: 1.5em">10:00 AM - 02:00 PM</p>
            <p>Otros Telefonos</p>
           <div >
             <i class="glyphicon glyphicon-phone"></i>
