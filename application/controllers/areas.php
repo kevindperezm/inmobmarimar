@@ -25,7 +25,8 @@ class Areas extends ApplicationController {
     $this->load->library('pagination');
     $this->load->library('Picture_repo');
 
-    $area = $this->db->from('areas')->where("id = $id")->limit(1)->get()->result()[0];
+    $areas = $this->db->from('areas')->where("id = $id")->limit(1)->get()->result();
+    $area  = $areas[0];
 
     $condiciones = array('area_id' => $area->id);
     $this->init_pagination($condiciones, "areas/$id");
