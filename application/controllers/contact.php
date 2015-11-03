@@ -39,6 +39,7 @@ class Contact extends ApplicationController {
     $this->email->to(CONTACT_EMAIL_ADDRESS);
     $this->email->reply_to($contact['email']);
     $this->email->subject('Solicitud de contacto');
+    $this->email->set_mailtype('html');
   }
 
   private function send_email($contact) {
